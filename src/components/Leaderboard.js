@@ -10,7 +10,7 @@ function Leaderboard() {
 		fetchNext();
 	}, []);
   async function fetchNext() {
-	  let res = await axios.get("http://localhost:8080/leaderboard");
+	  let res = await axios.get("https://nutornot.el.r.appspot.com/leaderboard");
 	  console.log(res.data);
 	  setldrbrd(res.data);
 }
