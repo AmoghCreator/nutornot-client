@@ -42,7 +42,9 @@ function Contri() {
 		console.log(URL.createObjectURL(e.target.files[0]));
 	}
 	return (
-		<div className="flex justify-center items-center h-screen bg-gray-100">
+		<div className='flex flex-col items-center justify-center bg-gray-100'>
+			<h1 className='text-4xl uppercase mt-3 font-medium mx-auto'>Upload an Image</h1>
+		<div className="flex justify-center items-center h-4/5 mt-12 bg-gray-100">
   <div className="bg-white p-6 rounded-lg shadow-lg">
     {img && <img src={img} alt="Upload_Image" className="w-64 h-64 object-cover mb-4" />}
     <form onSubmit={onClk} className={`flex flex-col items-center ${img ? 'space-y-4' : 'space-y-2'}`}>
@@ -60,6 +62,8 @@ function Contri() {
     </form>
   </div>
 </div>
+		</div>
+
 
 	);
 }

@@ -28,7 +28,7 @@ function App() {
               Leaderboard
             </a>
           </li>
-          <li className="hover:bg-gray-700 px-3 py-2 md:text-lg text-md font-medium  rounded-md cursor-pointer">
+          <li className="hover:bg-gray-700 px-3 py-2 text-lg font-medium  rounded-md cursor-pointer">
             <a value="contri" onClick={navHandler}>
               Contribute
             </a>
