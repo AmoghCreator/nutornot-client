@@ -16,11 +16,12 @@ function Main() {
   async function Nut() {
 	  // update count in db
 	  await axios.get(`https://nutornot.el.r.appspot.com/image/add/${img.title}`);
-
+	  fetchNext();
   }
   async function Not() {
 	  // update count in db
 	  await axios.get(`https://nutornot.el.r.appspot.com/image/sub/${img.title}`);
+	  fetchNext();
   }
 
   return (
