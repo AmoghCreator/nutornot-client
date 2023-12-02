@@ -34,7 +34,7 @@ function Leaderboard() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">Leaderboard</h1>
+      <h1 className="text-4xl font-bold text-gray-800 mb-4 mt-3">Leaderboard</h1>
       <div className="overflow-auto w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
         {ldrbrd.map((item, key) => (
           <div className={`flex flex-col items-center justify-center ${getRankStyle(key)} border-b border-gray-200 p-4`}>

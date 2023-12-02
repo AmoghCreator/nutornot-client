@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import logo from "../images/logo.png";
 
 function Main() {
   const [img, setImg] = useState("https://source.unsplash.com/random");
@@ -30,15 +31,21 @@ function Main() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center pt-20 ">
-      <h1 className="md:text-5xl text-4xl font-bold text-gray-800 mb-6">Nut or Not</h1>
+	<div className="flex flex-col items-center justify-center pt-3">
+	<div className="mb-8">
+	  <img src={logo} alt="logo" className="mx-auto w-32 h-28 md:h-36 md:w-40" />
+	</div>
+	<div className="flex items-center">
+	  <h1 className="md:text-5xl text-4xl font-bold text-gray-800 ">Nut or Not</h1>
+	  <span className="italic text-green-500 text-lg font-medium ml-2">KIIT Edition</span>
+	</div>
       {loading ? (
         <div className="flex justify-center items-center">
 		<div className="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-green-500"></div>
 	  </div>
       ) : (
         <>
-          <div className="mb-4 md:w-96 w-88 h-2/3 flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
+          <div className="mb-4 mt-6 md:w-96 w-88 h-2/3 flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
             <img src={img.link} alt="logo" className="w-full h-full object-cover" />
           </div>
           <div className="flex space-x-4">
