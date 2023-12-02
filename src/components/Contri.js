@@ -21,6 +21,7 @@ function Contri() {
 		const imgRes = await axios.post("https://api.cloudinary.com/v1_1/dbnlrh9gs/image/upload", formData)
 		console.log(imgRes.data.secure_url);
 		axios.post("https://nutornot.el.r.appspot.com/create", {title:e.target[1].value , link:imgRes.data.secure_url})
+		setImg("https://res.cloudinary.com/dbnlrh9gs/image/upload/v1701532189/done.jpg");
 	}
 
 	function onChng(e) {

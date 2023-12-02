@@ -30,6 +30,7 @@ function Main() {
 	<img src={img.link} alt="logo" />
 	<div className="btn-container">	
 	  <button className="btn" onClick={Nut}>Nut</button>
+	  <h3 style={{"display":"inline-block"}}>OR</h3>
 	  <button className="btn" onClick={Not}>Not</button>
 	</div>
     </div>
