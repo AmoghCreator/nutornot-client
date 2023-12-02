@@ -1,0 +1,16 @@
+ul {
+	display : flex;
+	justify-content : space-between;
+	background-color : blue;
+	padding : 2vh;
+	color : white;
+}
+
+li {
+	list-style-type : none;
+}
+li > a {
+	color : white;
+	text-decoration : none;
+	font-size : 1.5em;
+}
