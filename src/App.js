@@ -18,17 +18,17 @@ function App() {
     <div className="App">
       <nav className="bg-gray-800 text-white p-4">
         <ul className="flex justify-center space-x-4">
-          <li className="hover:bg-gray-700 px-3 py-2 text-lg font-medium rounded-md cursor-pointer">
+          <li className="hover:bg-gray-700 px-3 py-2 md:text-lg text-md font-medium rounded-md cursor-pointer">
             <a value="main" onClick={navHandler}>
               Home
             </a>
           </li>
-          <li className="hover:bg-gray-700 px-3 py-2 text-lg font-medium  rounded-md cursor-pointer">
+          <li className="hover:bg-gray-700 px-3 py-2 md:text-lg text-md font-medium  rounded-md cursor-pointer">
             <a value="leaderboard" onClick={navHandler}>
               Leaderboard
             </a>
           </li>
-          <li className="hover:bg-gray-700 px-3 py-2 text-lg font-medium  rounded-md cursor-pointer">
+          <li className="hover:bg-gray-700 px-3 py-2 md:text-lg text-md font-medium  rounded-md cursor-pointer">
             <a value="contri" onClick={navHandler}>
               Contribute
             </a>

@@ -31,14 +31,14 @@ function Main() {
 
   return (
     <div className="flex flex-col items-center justify-center pt-20 ">
-      <h1 className="text-5xl font-bold text-gray-800 mb-6">Nut or Not</h1>
+      <h1 className="md:text-5xl text-4xl font-bold text-gray-800 mb-6">Nut or Not</h1>
       {loading ? (
         <div className="flex justify-center items-center">
 		<div className="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-green-500"></div>
 	  </div>
       ) : (
         <>
-          <div className="mb-4 w-96 h-2/3 flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
+          <div className="mb-4 md:w-96 w-88 h-2/3 flex items-center justify-center overflow-hidden rounded-lg shadow-lg">
             <img src={img.link} alt="logo" className="w-full h-full object-cover" />
           </div>
           <div className="flex space-x-4">
