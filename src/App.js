@@ -39,7 +39,10 @@ function App() {
       {pg == "contri" && <Contri />}
       {pg == "main" && <Main />}
       {pg == "leaderboard" && <Leaderboard />}
-      <footer className="bg-gray-800 text-white p-4">
+      <footer className="bg-gray-800 text-white p-4 text-center">
+	  <h3 className="bg-red-700">To Report Image Send Screenshot to 
+	  	<a href="mailto: nutornot@proton.me" className="px-2">nutornot@proton.me</a>
+	  </h3>
 	  <h3>Created with 🍆 by Council Of Cocks [KiiT Chapter]</h3>
       </footer>
     </div>
