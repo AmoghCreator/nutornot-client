@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import logo from "../images/logo.png";
 import nutOrNot from "../images/NutOrNot.png";
+import GoogleAds from './AdComponent';
 
 function Main() {
   const [img, setImg] = useState("https://source.unsplash.com/random");
@@ -32,7 +33,8 @@ function Main() {
   }
 
   return (
-	  // tailwind css for page height and width : 
+	<>
+	  <GoogleAds/>
 	<div className=" main flex flex-col items-center justify-center pt-3 h-fit">
 	<div className="mb-2 flex">
 	  <img src={logo} alt="logo" className="mx-auto w-24 h-20 md:h-36 md:w-40" />
@@ -42,6 +44,7 @@ function Main() {
 	  <h1 className="md:text-5xl text-4xl font-bold text-gray-800 ">Nut or Not</h1>
 	  <span className="italic text-green-500 text-lg font-medium ml-2">KIIT Edition</span>
 	</div>
+	<GoogleAds/>
       {loading ? (
         <div className="flex justify-center items-center">
 		<div className="animate-spin rounded-full h-32 w-32 border-t-4 border-b-4 border-green-500"></div>
@@ -59,6 +62,7 @@ function Main() {
         </>
       )}
     </div>
+	</>
   );
 }
 
