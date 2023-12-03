@@ -10,9 +10,11 @@ import 'react-toastify/dist/ReactToastify.css';
 function Contri() {
 	const [img, setImg] = useState({});
 	const [title, setTitle] = useState("");
+	const [available, setAvailable] = useState(true);
 
 	async function onClk(e) {
 		// upload img to cloudinary , create instance on DB
+		setAvailable(false);
 		const formData = new FormData();
 		e.preventDefault();
 		let link = (URL.createObjectURL(e.target[0].files[0]));
@@ -34,6 +36,7 @@ function Contri() {
 			console.log(err);
 			toast.error("Image upload failed");
 		}
+		setAvailable(true);
 	}
 
 	function onChng(e) {
@@ -57,7 +60,7 @@ function Contri() {
       </label>
 	  <p>after clicking wait for a few seconds</p>
       <input type="text" name="title" className="px-4 py-2 border rounded" placeholder="Enter title" />
-      <input type="submit" value="Submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" />
+		{available && <input type="submit" value="Submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" />}
 	  <ToastContainer />
     </form>
   </div>

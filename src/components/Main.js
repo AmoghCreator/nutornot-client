@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import logo from "../images/logo.png";
+import nutOrNot from "../images/NutOrNot.png";
 
 function Main() {
   const [img, setImg] = useState("https://source.unsplash.com/random");
@@ -32,8 +33,9 @@ function Main() {
 
   return (
 	<div className="flex flex-col items-center justify-center pt-3">
-	<div className="mb-8">
-	  <img src={logo} alt="logo" className="mx-auto w-32 h-28 md:h-36 md:w-40" />
+	<div className="mb-2 flex">
+	  <img src={logo} alt="logo" className="mx-auto w-24 h-20 md:h-36 md:w-40" />
+	  <img src={nutOrNot} alt="logo" className="mx-auto w-24 h-20 md:h-36 md:w-40" />
 	</div>
 	<div className="flex items-center">
 	  <h1 className="md:text-5xl text-4xl font-bold text-gray-800 ">Nut or Not</h1>

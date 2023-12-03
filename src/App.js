@@ -39,6 +39,9 @@ function App() {
       {pg == "contri" && <Contri />}
       {pg == "main" && <Main />}
       {pg == "leaderboard" && <Leaderboard />}
+      <footer className="bg-gray-800 text-white p-4">
+	  <h3>Created with 🍆 by Council Of Cocks [KiiT Chapter]</h3>
+      </footer>
     </div>
   );
 }
