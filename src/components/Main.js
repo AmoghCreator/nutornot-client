@@ -32,7 +32,8 @@ function Main() {
   }
 
   return (
-	<div className="flex flex-col items-center justify-center pt-3">
+	  // tailwind css for page height and width : 
+	<div className=" main flex flex-col items-center justify-center pt-3 h-fit">
 	<div className="mb-2 flex">
 	  <img src={logo} alt="logo" className="mx-auto w-24 h-20 md:h-36 md:w-40" />
 	  <img src={nutOrNot} alt="logo" className="mx-auto w-24 h-20 md:h-36 md:w-40" />

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
 img {
 	max-width: 80vw;
 	max-height: 60vh;
@@ -9,6 +14,11 @@ img {
 
 .contri {
 	text-align: center;
+} 
+
+.main {
+	max-height : 80vh;
+	width : auto;
 }
 
 button {
